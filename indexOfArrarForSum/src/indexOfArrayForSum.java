@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 import static java.lang.Math.min;
 import static java.lang.Math.max;
 
@@ -45,3 +48,24 @@ public class indexOfArrayForSum {
         return b;
     }
 }
+
+
+
+//      LEET Solution:
+//      =================
+//      class Solution {
+//          public int[] twoSum(int[] nums, int target) {
+//              Map<Integer, Integer> hash = new HashMap<>();
+//              hash.put(nums[0], 0);
+//              int remainder;
+//              for (int i = 1; i < nums.length; i++){
+//                  if (hash.containsKey(target - nums[i])){
+//                      return new int[] {hash.get(target - nums[i]), i};
+//                  }
+//                  else{
+//                      hash.put(nums[i], i);
+//                  }
+//              }
+//              return new int[] {0,0};
+//          }
+//      }
