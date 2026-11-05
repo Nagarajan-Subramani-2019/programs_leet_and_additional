@@ -15,6 +15,8 @@ public class centralMeridian {
         List<Integer> solution=new LinkedList<>();
 
         TreeMap<Integer,Integer> ss=new TreeMap<Integer,Integer>();
+String a="";
+Float ax=new Float("3.0");
 
         int z=0;
         for(int i=0;i<q.size();i++)
